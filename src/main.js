@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
     async function loadModel() {
         try {
             // The path is relative to the index.html file
-            const modelUrl = '../model_js/model.json';
+            const modelUrl = './model_js/model.json';
             model = await tf.loadGraphModel(modelUrl);
             predictionResult.innerText = 'Model loaded. Please select an image.';
         } catch (error) {
