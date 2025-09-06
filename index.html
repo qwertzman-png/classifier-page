@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Model Inference</title>
+    <style>
+        body { font-family: sans-serif; margin: 2em; }
+        #selected-image { max-width: 400px; max-height: 400px; margin-top: 1em; }
+        #prediction-result { margin-top: 1em; font-size: 1.2em; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <input type="file" id="image-selector" accept="image/*">    
+    <div>
+        <img id="selected-image" src="" alt="Selected Image"/>
+    </div>
+    <div id="prediction-result"></div>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+    <script src="src/main.js"></script>
+</body>
+</html>
